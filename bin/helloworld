@@ -1,3 +1,16 @@
 #!/usr/bin/env node
+// Regular js file for nodejs, all js syntax and APIs are available
 
-console.log("Look Ma, I'm a CLI written in node");
+// Remember: node uses 'require' and not 'import'
+const program = require("../lib/index");
+
+// Global variable process contain all info about the running process
+// - argv: the list of arguments
+// - env: environment variables
+// - ...
+// See: https://nodejs.org/api/process.html
+program(process.argv);
+
+// It can be used also to execute actions over the proces
+// Most common one: exit it
+process.exit(0);

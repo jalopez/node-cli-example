@@ -15,6 +15,9 @@ Branches are called `lesson-<n>`, so when you are ready to start, please `git ch
     - `chmod +x bin/yourscript`
     - `npm i -g`
 1.  Hello CLI! Basic **concepts** and app structure
+    - `process.argv`
+    - `process.exit`
+    - bin vs. lib
 2.  I want you to call external **APIs**
 3.  Parsing **argv** like a ~~sir~~ pirate
 4.  **Config files** FTW
