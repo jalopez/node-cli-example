@@ -2,6 +2,9 @@
   "name": "node-cli-example",
   "version": "0.0.1",
   "description": "Example of node CLI app for teaching purposes",
+  "bin": {
+    "helloworld": "./bin/helloworld"
+  },
   "main": "lib/index.js",
   "repository": "https://github.com/jalopez/node-cli-example",
   "author": "Javier López Pardo <javier.lopezpardo@cabify.com>",

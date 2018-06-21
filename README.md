@@ -10,6 +10,10 @@ Branches are called `lesson-<n>`, so when you are ready to start, please `git ch
 ## Contents
 
 0.  Let's the party started
+    - `"bin"` attribute at package.json
+    - `# /usr/env/node`
+    - `chmod +x bin/yourscript`
+    - `npm i -g`
 1.  Hello CLI! Basic **concepts** and app structure
 2.  I want you to call external **APIs**
 3.  Parsing **argv** like a ~~sir~~ pirate
