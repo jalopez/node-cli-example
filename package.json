@@ -9,5 +9,9 @@
   "repository": "https://github.com/jalopez/node-cli-example",
   "author": "Javier López Pardo <javier.lopezpardo@cabify.com>",
   "license": "MIT",
-  "private": false
+  "private": false,
+  "dependencies": {
+    "request": "^2.87.0",
+    "request-promise": "^4.2.2"
+  }
 }

@@ -9,8 +9,8 @@ const program = require("../lib/index");
 // - env: environment variables
 // - ...
 // See: https://nodejs.org/api/process.html
-program(process.argv);
-
-// It can be used also to execute actions over the proces
-// Most common one: exit it
-process.exit(0);
+program().then(() => {
+  // It can be used also to execute actions over the process
+  // Most common one: exit it
+  process.exit(0);
+});
