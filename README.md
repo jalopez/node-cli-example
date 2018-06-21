@@ -5,10 +5,11 @@ Example of node CLI app for teaching purposes.
 ## Usage
 
 This is a course repo, it contains lesson branches including new code and examples per lesson.
-Branches are called `lesson-<n>`, so when you are ready to start, please `git checkout lesson-1`
+Branches are called `lesson-<n>`, so when you are ready to start, please `git checkout lesson-0`
 
 ## Contents
 
+0.  Let's the party started
 1.  Hello CLI! Basic **concepts** and app structure
 2.  I want you to call external **APIs**
 3.  Parsing **argv** like a ~~sir~~ pirate
