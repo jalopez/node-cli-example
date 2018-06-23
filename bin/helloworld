@@ -10,7 +10,9 @@ const program = require("../lib/index");
 // - ...
 // See: https://nodejs.org/api/process.html
 program(process.argv[2], process.argv[3], process.argv[4]).then((result) => {
-  console.log(result);
+  result.forEach(({ text, retweet_count }) => {
+    console.log(`- (${retweet_count}) ${text}`);
+  });
   // It can be used also to execute actions over the process
   // Most common one: exit it
   process.exit(0);
