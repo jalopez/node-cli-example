@@ -18,13 +18,13 @@ Branches are called `lesson-<n>`, so when you are ready to start, please `git ch
     - `process.argv`
     - `process.exit`
     - bin vs. lib
-1.  I want you to call external **APIs**
+2.  I want you to call external **APIs**
     - `request-promise`: https://github.com/request/request-promise
-1.  Parsing **argv** like a ~~sir~~ pirate
-1.  **Config files** FTW
-1.  CLIs at your **command**
-1.  Put some **color** in your ~~life~~ output
-1.  **Testing**, testing, testing
+3.  Parsing **argv** like a ~~sir~~ pirate
+4.  **Config files** FTW
+5.  CLIs at your **command**
+6.  Put some **color** in your ~~life~~ output
+7.  **Testing**, testing, testing
 
 ## Disclaimer
 
