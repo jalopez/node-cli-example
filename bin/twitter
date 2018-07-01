@@ -11,9 +11,14 @@ const program = require("../lib/index");
 // - ...
 // See: https://nodejs.org/api/process.html
 
+const findUp = require('find-up');
+const fs = require('fs')
+const configPath = findUp.sync(['.twitterrc', '.twitterc.json'])
+const config = configPath ? JSON.parse(fs.readFileSync(configPath)) : {}
 
 const argv = yargs
   .scriptName('twitter')
+  .config(config)
   .usage('$0 [options] @twitterAccount')
   .option('key', {
     alias: 'k',

@@ -23,6 +23,7 @@ Branches are called `lesson-<n>`, so when you are ready to start, please `git ch
 3.  Parsing **argv** like a ~~sir~~ pirate
     - `yargs`: https://github.com/yargs/yargs
 4.  **Config files** FTW
+    - `find-up`: https://www.npmjs.com/package/find-up
 5.  CLIs at your **command**
 6.  Put some **color** in your ~~life~~ output
 7.  **Testing**, testing, testing
