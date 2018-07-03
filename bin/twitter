@@ -2,7 +2,7 @@
 // Regular js file for nodejs, all js syntax and APIs are available
 
 // Remember: node uses 'require' and not 'import'
-const yargs = require('yargs');
+const yargs = require("yargs");
 const program = require("../lib/index");
 
 // Global variable process contain all info about the running process
@@ -11,39 +11,24 @@ const program = require("../lib/index");
 // - ...
 // See: https://nodejs.org/api/process.html
 
-const findUp = require('find-up');
-const fs = require('fs')
-const configPath = findUp.sync(['.twitterrc', '.twitterc.json'])
-const config = configPath ? JSON.parse(fs.readFileSync(configPath)) : {}
+const findUp = require("find-up");
+const fs = require("fs");
+const configPath = findUp.sync([".twitterrc", ".twitterc.json"]);
+const config = configPath ? JSON.parse(fs.readFileSync(configPath)) : {};
 
 const argv = yargs
-  .scriptName('twitter')
+  .scriptName("twitter")
   .config(config)
-  .usage('$0 [options] @twitterAccount')
-  .option('key', {
-    alias: 'k',
-    describe: 'Twitter API key'
+  .usage("$0 [command] [options] @twitterAccount")
+  .option("key", {
+    alias: "k",
+    describe: "Twitter API key"
   })
-  .option('secret', {
-    alias: 's',
-    describe: 'Twitter API secret'
+  .option("secret", {
+    alias: "s",
+    describe: "Twitter API secret"
   })
-  .demandOption(['key', 'secret'], 'Please provide both key and secret')
-  .check((argv) => {
-    if (argv._.length !== 1) {
-      throw 'Error: You must provide a twitter account';
-    }
-    return true;
-  })
-  .help()
-  .argv;
-
-
-program(argv._[0], argv).then((result) => {
-  result.forEach(({ text, retweet_count }) => {
-    console.log(`- ${text} (${retweet_count})`);
-  });
-  // It can be used also to execute actions over the process
-  // Most common one: exit it
-  process.exit(0);
-});
+  .demandOption(["key", "secret"], "Please provide both key and secret")
+  .commandDir("../lib/commands")
+  .recommendCommands()
+  .help().argv;
