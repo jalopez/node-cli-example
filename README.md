@@ -18,15 +18,17 @@ Branches are called `lesson-<n>`, so when you are ready to start, please `git ch
     - `process.argv`
     - `process.exit`
     - bin vs. lib
-2.  I want you to call external **APIs**
+1.  I want you to call external **APIs**
     - `request-promise`: https://github.com/request/request-promise
-3.  Parsing **argv** like a ~~sir~~ pirate
+1.  Parsing **argv** like a ~~sir~~ pirate
     - `yargs`: https://github.com/yargs/yargs
-4.  **Config files** FTW
+1.  **Config files** FTW
     - `find-up`: https://www.npmjs.com/package/find-up
-5.  CLIs at your **command**
-6.  Put some **color** in your ~~life~~ output
-7.  **Testing**, testing, testing
+1.  CLIs at your **command**
+    - Yargs commands: https://github.com/yargs/yargs/blob/master/docs/advanced.md
+    - `inquirer`: https://github.com/SBoudrias/Inquirer.js
+1.  Put some **color** in your ~~life~~ output
+1.  **Testing**, testing, testing
 
 ## Disclaimer
 

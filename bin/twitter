@@ -27,7 +27,6 @@ const argv = yargs
     alias: "s",
     describe: "Twitter API secret"
   })
-  .demandOption(["key", "secret"], "Please provide both key and secret")
   .commandDir("../lib/commands")
   .recommendCommands()
   .help().argv;
