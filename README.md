@@ -28,6 +28,8 @@ Branches are called `lesson-<n>`, so when you are ready to start, please `git ch
     - Yargs commands: https://github.com/yargs/yargs/blob/master/docs/advanced.md
     - `inquirer`: https://github.com/SBoudrias/Inquirer.js
 1.  Put some **color** in your ~~life~~ output
+    - `chalk`: https://github.com/chalk/chalk
+    - `node-emoji`: https://www.npmjs.com/package/node-emoji
 1.  **Testing**, testing, testing
 
 ## Disclaimer
