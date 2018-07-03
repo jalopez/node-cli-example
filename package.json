@@ -15,6 +15,7 @@
     "find-up": "^3.0.0",
     "inquirer": "^6.0.0",
     "node-emoji": "^1.8.1",
+    "ora": "^2.1.0",
     "request": "^2.87.0",
     "request-promise": "^4.2.2",
     "url-regex": "^4.1.1",

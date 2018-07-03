@@ -30,6 +30,7 @@ Branches are called `lesson-<n>`, so when you are ready to start, please `git ch
 1.  Put some **color** in your ~~life~~ output
     - `chalk`: https://github.com/chalk/chalk
     - `node-emoji`: https://www.npmjs.com/package/node-emoji
+    - `ora`: https://github.com/sindresorhus/ora
 1.  **Testing**, testing, testing
 
 ## Disclaimer
