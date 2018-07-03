@@ -19,7 +19,6 @@ const config = configPath ? JSON.parse(fs.readFileSync(configPath)) : {};
 const argv = yargs
   .scriptName("twitter")
   .config(config)
-  .usage("$0 [command] [options] @twitterAccount")
   .option("key", {
     alias: "k",
     describe: "Twitter API key"
