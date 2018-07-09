@@ -32,6 +32,8 @@ Branches are called `lesson-<n>`, so when you are ready to start, please `git ch
     - `node-emoji`: https://www.npmjs.com/package/node-emoji
     - `ora`: https://github.com/sindresorhus/ora
 1.  **Testing**, testing, testing
+    - Unit tests: `jest`
+    - Integration tests: https://www.npmjs.com/package/command-line-test
 
 ## Disclaimer
 
